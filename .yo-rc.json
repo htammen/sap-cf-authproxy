@@ -1,0 +1,16 @@
+{
+  "generator-easy-ui5": {
+    "projectname": "prpFESample",
+    "namespace": "net.prp.dienstleister.fe",
+    "platform": "Cloud Foundry HTML5 Application Repository",
+    "viewtype": "XML",
+    "viewname": "MainView",
+    "ui5libs": "Content delivery network (OpenUI5)",
+    "newdir": true,
+    "namespaceURI": "net/prp/dienstleister/fe",
+    "uimodules": [
+      "uimodule"
+    ],
+    "setupCompleted": true
+  }
+}
