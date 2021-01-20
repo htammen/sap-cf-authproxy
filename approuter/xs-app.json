@@ -1,8 +1,19 @@
 {
   "welcomeFile": "netprpdienstleisterfeprpFESample/",
-  "authenticationMethod": "none",
+  "authenticationMethod": "route",
   "logout": {
     "logoutEndpoint": "/do/logout"
   },
-  "routes": []
+  "routes": [
+    {
+      "source": "^/backend/(.*)$",
+      "destination": "backend",
+      "target": "/$1",
+      "authenticationType": "xsuaa",
+      "scope": [
+        "$XSAPPNAME.baudienstleister"
+      ],
+      "csrfProtection": false
+    }
+  ]
 }

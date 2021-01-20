@@ -60,3 +60,5 @@ resources:
       path: ./xs-security.json
       service-plan: application
       service: xsuaa
+  - name: ht-logs
+    type: org.cloudfoundry.existing-service

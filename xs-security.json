@@ -6,6 +6,10 @@
     {
       "name": "uaa.user",
       "description": "UAA"
+    },
+    {
+      "name": "$XSAPPNAME.baudienstleister",
+      "description": "Eine normale externer Baudienstleister Berechtigung"
     }
   ],
   "role-templates": [
@@ -15,6 +19,14 @@
       "scope-references": [
         "uaa.user"
       ]
+    },
+    {
+      "name": "Baudienstleister",
+      "description": "Ein normaler Baudienstleister",
+      "scope-references": [
+        "$XSAPPNAME.baudienstleister"
+      ],
+      "attribute-references": []
     }
   ]
 }

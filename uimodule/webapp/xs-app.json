@@ -1,6 +1,14 @@
 {
   "welcomeFile": "/index.html",
+  "authenticationMethod": "route",
   "routes": [
+    {
+      "source": "^/backend/(.*)$",
+      "destination": "backend",
+      "target": "/$1",
+      "authenticationType": "xsuaa",
+      "csrfProtection": false
+    },
     {
       "source": "^(.*)",
       "target": "$1",

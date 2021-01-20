@@ -5,7 +5,22 @@
   <App id="idAppControl" >
     <pages>
       <Page title="{i18n>title}">
-        <content></content>
+        <headerContent>
+          <Button text="Logout" press="onLogout"></Button>
+        </headerContent>
+        <content>
+          <Title text="Hello World"></Title>
+          <List
+              headerText="{i18n>invoiceListTitle}"
+              class="sapUiResponsiveMargin"
+              width="auto"
+              items="{/Books}" >
+              <items>
+                <ObjectListItem
+                    title="{title}"/>
+              </items>
+          </List>
+        </content>
       </Page>
     </pages>
   </App>
